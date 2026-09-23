@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "",
         "— Enviado desde el sitio web de SIS Seguridad Electrónica"
       );
-      window.location.href = `mailto:info@sis-seguridad.com.ar?subject=${encodeURIComponent(
+      window.location.href = `mailto:gabrielulunqui@gmail.com?subject=${encodeURIComponent(
         subject
       )}&body=${encodeURIComponent(lines.join("\n"))}`;
       const alertBox = document.getElementById("form-success");

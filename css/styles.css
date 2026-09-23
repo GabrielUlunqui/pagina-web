@@ -434,18 +434,19 @@ a {
   align-items: flex-end;
   padding: 5.5rem 0 3.5rem;
   background:
-    radial-gradient(55% 75% at 85% 0%, rgba(0, 86, 255, 0.35), transparent 62%),
     linear-gradient(
       180deg,
       #ffffff 0px,
-      #e3ecff 30px,
-      #8faeff 66px,
-      #2f6dff 105px,
-      var(--sis-blue) 140px,
-      var(--sis-blue-dark) 195px,
-      var(--sis-navy-2) 260px,
-      var(--sis-navy) 340px
-    );
+      rgba(227, 236, 255, 0.94) 30px,
+      rgba(143, 174, 255, 0.88) 66px,
+      rgba(47, 109, 255, 0.85) 105px,
+      rgba(0, 86, 255, 0.84) 140px,
+      rgba(0, 64, 199, 0.86) 195px,
+      rgba(17, 24, 39, 0.88) 260px,
+      rgba(11, 21, 39, 0.92) 340px
+    ),
+    url("../imagen/camara.webp") center / cover no-repeat,
+    var(--sis-navy);
   color: #fff;
 }
 
