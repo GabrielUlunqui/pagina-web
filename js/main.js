@@ -57,6 +57,28 @@ document.addEventListener("DOMContentLoaded", () => {
     onScroll();
   }
 
+  // Modo oscuro: toggle en navbar + persistencia en localStorage
+  const themeToggle = document.querySelector(".theme-toggle");
+  const setTheme = (theme, persist = true) => {
+    document.documentElement.dataset.theme = theme;
+    if (persist) localStorage.setItem("sis-theme", theme);
+    if (themeToggle) {
+      themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
+      const icon = themeToggle.querySelector("i");
+      if (icon)
+        icon.className =
+          theme === "dark" ? "bi bi-sun" : "bi bi-moon-stars";
+    }
+  };
+  setTheme(document.documentElement.dataset.theme || "light", false);
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () =>
+      setTheme(
+        document.documentElement.dataset.theme === "dark" ? "light" : "dark"
+      )
+    );
+  }
+
   // Aparición suave al hacer scroll (fade-in / slide-up)
   const revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {

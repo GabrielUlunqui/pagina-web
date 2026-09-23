@@ -24,6 +24,7 @@
     />
     <link rel="icon" href="imagen/Logo-final.jpeg" type="image/jpeg" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script>document.documentElement.dataset.theme = localStorage.getItem("sis-theme") || "light";</script>
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -74,6 +75,7 @@
                 <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
             </ul>
+            <button class="theme-toggle" type="button" aria-label="Cambiar entre modo claro y oscuro" aria-pressed="false"><i class="bi bi-moon-stars" aria-hidden="true"></i></button>
             <a class="btn btn-sis" href="asesoramiento.html"
               >Solicitar asesoramiento</a
             >
