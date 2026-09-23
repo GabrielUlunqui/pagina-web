@@ -69,6 +69,14 @@ document.addEventListener("DOMContentLoaded", () => {
         icon.className =
           theme === "dark" ? "bi bi-sun" : "bi bi-moon-stars";
     }
+    document
+      .querySelectorAll(".sis-logo-img")
+      .forEach((img) => {
+        img.src =
+          theme === "dark"
+            ? "imagen/SIS-Seguridad-Electronica-logo-dark.svg"
+            : "imagen/SIS-Seguridad-Electronica-logo.svg";
+      });
   };
   setTheme(document.documentElement.dataset.theme || "light", false);
   if (themeToggle) {

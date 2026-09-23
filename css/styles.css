@@ -2098,6 +2098,12 @@ body {
   filter: invert(1);
 }
 
+/* Footer: el logo usa la variante clara sin pastilla blanca */
+[data-theme="dark"] .sis-footer .sis-logo-img {
+  background: transparent;
+  padding: 0;
+}
+
 [data-theme="dark"] .theme-toggle {
   background: rgba(126, 166, 255, 0.1);
   border-color: rgba(126, 166, 255, 0.3);
