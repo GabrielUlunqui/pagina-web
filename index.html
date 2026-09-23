@@ -30,7 +30,7 @@
 
     <header>
       <nav
-        class="navbar navbar-expand-lg sis-navbar sticky-top"
+        class="navbar navbar-expand-lg sis-navbar sis-navbar-fused sticky-top"
         aria-label="Navegación principal"
       >
         <div class="container">
@@ -83,45 +83,74 @@
     </header>
 
     <main id="contenido">
-      <section class="home-hero">
-        <div class="container">
-          <div class="row align-items-center g-4 g-xl-5">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container position-relative">
+          <div class="row align-items-center g-5">
             <div class="col-lg-6">
-              <span class="eyebrow">Líderes en Salta</span>
-              <h1>Seguridad inteligente para lo que más importa</h1>
-              <p class="lead-muted mt-3 mb-4">
+              <span class="hero-badge reveal">
+                <i class="bi bi-shield-fill-check" aria-hidden="true"></i>
+                Líderes en seguridad electrónica · Salta
+              </span>
+              <h1 id="hero-title" class="reveal d1">
+                Seguridad inteligente para
+                <span class="text-gradient">lo que más importa</span>
+              </h1>
+              <p class="hero-lead reveal d2">
                 Diseñamos, instalamos y damos soporte a sistemas de seguridad
                 electrónica para hogares, comercios e industrias en toda la
                 provincia de Salta.
               </p>
-              <div class="d-flex flex-wrap gap-2">
+              <div class="d-flex flex-wrap gap-3 mt-4 reveal d2">
                 <a class="btn btn-sis" href="servicios.html"
                   >Conocé nuestros servicios</a
                 >
-                <a class="btn btn-sis-outline" href="asesoramiento.html"
+                <a class="btn btn-hero-ghost" href="asesoramiento.html"
                   >Solicitar asesoramiento</a
                 >
               </div>
+              <ul class="hero-points reveal d3">
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i
+                  >Soporte técnico local
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i
+                  >Alertas en tiempo real
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i
+                  >Instalación garantizada
+                </li>
+              </ul>
             </div>
             <div class="col-lg-6">
-              <div
-                class="home-hero-media"
-                role="img"
-                aria-label="Centro de monitoreo de seguridad con pantallas"
-              ></div>
+              <div class="hero-media reveal reveal-right d2">
+                <img
+                  src="imagen/camara.webp"
+                  alt="Cámara de seguridad profesional instalada en exteriores"
+                />
+                <div class="hero-chip hero-chip-top" aria-hidden="true">
+                  <i class="bi bi-broadcast"></i>
+                  <span>Monitoreo 24/7</span>
+                </div>
+                <div class="hero-chip hero-chip-bottom" aria-hidden="true">
+                  <i class="bi bi-bell-fill"></i>
+                  <span>Alertas en tiempo real</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section-pad pt-4" aria-labelledby="valores-title">
+      <section class="trust-strip" aria-labelledby="confianza-title">
+        <h2 id="confianza-title" class="visually-hidden">
+          Por qué confiar en SIS
+        </h2>
         <div class="container">
-          <h2 id="valores-title" class="visually-hidden">
-            Por qué confiar en SIS
-          </h2>
           <div class="row g-3">
-            <div class="col-md-4">
-              <article class="value-card">
+            <div class="col-md-4 reveal">
+              <article class="trust-card">
                 <div class="icon-box" aria-hidden="true">
                   <i class="bi bi-phone"></i>
                 </div>
@@ -132,8 +161,8 @@
                 </p>
               </article>
             </div>
-            <div class="col-md-4">
-              <article class="value-card">
+            <div class="col-md-4 reveal d1">
+              <article class="trust-card">
                 <div class="icon-box" aria-hidden="true">
                   <i class="bi bi-headset"></i>
                 </div>
@@ -144,8 +173,8 @@
                 </p>
               </article>
             </div>
-            <div class="col-md-4">
-              <article class="value-card">
+            <div class="col-md-4 reveal d2">
+              <article class="trust-card">
                 <div class="icon-box" aria-hidden="true">
                   <i class="bi bi-shield-check"></i>
                 </div>
@@ -162,14 +191,14 @@
 
       <section class="section-pad bg-soft" aria-labelledby="servicios-title">
         <div class="container">
-          <div class="text-center mb-5">
+          <div class="text-center mb-5 reveal">
             <span class="eyebrow">Nuestros servicios</span>
             <h2 id="servicios-title" class="display-heading h1">
               Soluciones integrales de seguridad
             </h2>
           </div>
-          <div class="row g-3">
-            <div class="col-md-6 col-lg-4">
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4 reveal">
               <article class="service-card">
                 <div class="icon-box" aria-hidden="true">
                   <i class="bi bi-camera-video"></i>
@@ -179,12 +208,12 @@
                   Videovigilancia HD/4K con visión nocturna y acceso desde el
                   celular.
                 </p>
-                <a href="camaras.html" class="text-sis fw-bold"
+                <a href="camaras.html" class="service-link"
                   >Ver más <i class="bi bi-arrow-right"></i
                 ></a>
               </article>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 reveal d1">
               <article class="service-card">
                 <div class="icon-box" aria-hidden="true">
                   <i class="bi bi-bell"></i>
@@ -194,12 +223,12 @@
                   Sistemas inteligentes con sensores, sirenas y notificaciones
                   móviles.
                 </p>
-                <a href="alarmas.html" class="text-sis fw-bold"
+                <a href="alarmas.html" class="service-link"
                   >Ver más <i class="bi bi-arrow-right"></i
                 ></a>
               </article>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 reveal d2">
               <article class="service-card">
                 <div class="icon-box" aria-hidden="true">
                   <i class="bi bi-fingerprint"></i>
@@ -208,12 +237,12 @@
                 <p class="lead-muted">
                   Biometría, tarjetas RFID y software de gestión para empresas.
                 </p>
-                <a href="accesos.html" class="text-sis fw-bold"
+                <a href="accesos.html" class="service-link"
                   >Ver más <i class="bi bi-arrow-right"></i
                 ></a>
               </article>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 reveal">
               <article class="service-card">
                 <div class="icon-box" aria-hidden="true">
                   <i class="bi bi-lightning-charge"></i>
@@ -223,12 +252,12 @@
                   Perímetros energizados con señalización y activación de
                   alarma.
                 </p>
-                <a href="servicios.html#cercos" class="text-sis fw-bold"
+                <a href="servicios.html#cercos" class="service-link"
                   >Ver más <i class="bi bi-arrow-right"></i
                 ></a>
               </article>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 reveal d1">
               <article class="service-card">
                 <div class="icon-box" aria-hidden="true">
                   <i class="bi bi-geo-alt"></i>
@@ -237,12 +266,12 @@
                 <p class="lead-muted">
                   GPS en tiempo real, geocercas e historial de recorridos.
                 </p>
-                <a href="servicios.html#gps" class="text-sis fw-bold"
+                <a href="servicios.html#gps" class="service-link"
                   >Ver más <i class="bi bi-arrow-right"></i
                 ></a>
               </article>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4 reveal d2">
               <article class="service-card">
                 <div class="icon-box" aria-hidden="true">
                   <i class="bi bi-fire"></i>
@@ -252,7 +281,7 @@
                   Detección temprana, alarmas visuales y mantenimiento
                   periódico.
                 </p>
-                <a href="servicios.html#incendios" class="text-sis fw-bold"
+                <a href="servicios.html#incendios" class="service-link"
                   >Ver más <i class="bi bi-arrow-right"></i
                 ></a>
               </article>
@@ -261,135 +290,177 @@
         </div>
       </section>
 
-      <section class="section-pad" aria-labelledby="porque-title">
+      <section class="method" aria-labelledby="metodo-title">
         <div class="container">
-          <div class="text-center mb-5">
-            <span class="eyebrow">Diferenciales</span>
-            <h2 id="porque-title" class="display-heading h1">
-              ¿Por qué elegir SIS?
+          <div class="text-center reveal">
+            <span class="eyebrow eyebrow-light">Diferenciales &amp; Método</span>
+            <h2 id="metodo-title" class="display-heading h1 text-white">
+              Por qué elegirnos y cómo trabajamos
             </h2>
+            <p class="method-lead">
+              Combinamos tecnología profesional con un proceso de trabajo claro:
+              pasá el mouse sobre cada tarjeta para conocer el detalle.
+            </p>
           </div>
-          <div class="row g-3">
-            <div class="col-md-6 col-lg-3">
-              <article class="reason-card">
-                <div class="reason-number">01</div>
-                <div class="icon-box" aria-hidden="true">
-                  <i class="bi bi-cpu"></i>
-                </div>
-                <h3 class="h5 fw-bold">Tecnología profesional</h3>
-                <p class="lead-muted mb-0">
-                  Marcas confiables y configuración según el riesgo de cada
-                  espacio.
-                </p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <article class="reason-card">
-                <div class="reason-number">02</div>
-                <div class="icon-box" aria-hidden="true">
-                  <i class="bi bi-house-lock"></i>
-                </div>
-                <h3 class="h5 fw-bold">Seguridad a medida</h3>
-                <p class="lead-muted mb-0">
-                  Diseños personalizados para residencias, comercios e
-                  industrias.
-                </p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <article class="reason-card">
-                <div class="reason-number">03</div>
-                <div class="icon-box" aria-hidden="true">
-                  <i class="bi bi-people"></i>
-                </div>
-                <h3 class="h5 fw-bold">Asesoramiento especializado</h3>
-                <p class="lead-muted mb-0">
-                  Te guiamos en la elección de la solución más eficiente.
-                </p>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <article class="reason-card">
-                <div class="reason-number">04</div>
-                <div class="icon-box" aria-hidden="true">
-                  <i class="bi bi-tools"></i>
-                </div>
-                <h3 class="h5 fw-bold">Soporte técnico</h3>
-                <p class="lead-muted mb-0">
-                  Mantenimiento, revisiones y asistencia cuando lo necesitás.
-                </p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="section-pad bg-soft" aria-labelledby="proceso-title">
-        <div class="container">
-          <div class="text-center mb-5">
-            <span class="eyebrow">Método</span>
-            <h2 id="proceso-title" class="display-heading h1">
-              Cómo trabajamos
-            </h2>
+          <div class="method-groups">
+            <div class="method-group reveal">
+              <h3 class="method-sub">
+                <span class="method-sub-num">01</span> Nuestros diferenciales
+              </h3>
+              <div class="exp-grid" role="list">
+                <article class="exp-card" role="listitem" tabindex="0">
+                  <div class="exp-card-icon" aria-hidden="true">
+                    <i class="bi bi-cpu"></i>
+                  </div>
+                  <h4 class="exp-card-title">Tecnología profesional</h4>
+                  <p class="exp-card-hint">Marcas líderes del mercado</p>
+                  <div class="exp-card-more">
+                    <p>
+                      Trabajamos con hardware profesional y configuramos cada
+                      equipo según el nivel de riesgo real de tu espacio. Nada
+                      de soluciones genéricas: cada sistema se dimensiona para
+                      tu caso.
+                    </p>
+                    <span class="exp-card-tag">Diferencial SIS</span>
+                  </div>
+                </article>
+                <article class="exp-card" role="listitem" tabindex="0">
+                  <div class="exp-card-icon" aria-hidden="true">
+                    <i class="bi bi-house-lock"></i>
+                  </div>
+                  <h4 class="exp-card-title">Seguridad a medida</h4>
+                  <p class="exp-card-hint">Diseños 100% personalizados</p>
+                  <div class="exp-card-more">
+                    <p>
+                      Residencias, comercios, industrias y flotas: analizamos
+                      cada escenario y proponemos la combinación justa de
+                      cámaras, alarmas, accesos y monitoreo.
+                    </p>
+                    <span class="exp-card-tag">Diferencial SIS</span>
+                  </div>
+                </article>
+                <article class="exp-card" role="listitem" tabindex="0">
+                  <div class="exp-card-icon" aria-hidden="true">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <h4 class="exp-card-title">Asesoramiento especializado</h4>
+                  <p class="exp-card-hint">Te guiamos paso a paso</p>
+                  <div class="exp-card-more">
+                    <p>
+                      Un técnico escucha tu necesidad, resuelve tus dudas y te
+                      recomienda la alternativa más eficiente en relación
+                      costo-beneficio, sin compromiso.
+                    </p>
+                    <span class="exp-card-tag">Diferencial SIS</span>
+                  </div>
+                </article>
+                <article class="exp-card" role="listitem" tabindex="0">
+                  <div class="exp-card-icon" aria-hidden="true">
+                    <i class="bi bi-tools"></i>
+                  </div>
+                  <h4 class="exp-card-title">Soporte técnico</h4>
+                  <p class="exp-card-hint">Asistencia cuando la necesitás</p>
+                  <div class="exp-card-more">
+                    <p>
+                      Mantenimiento preventivo, revisiones programadas y
+                      respuesta rápida ante cualquier inconveniente. Tu sistema
+                      siempre operativo.
+                    </p>
+                    <span class="exp-card-tag">Diferencial SIS</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="method-group reveal d1">
+              <h3 class="method-sub">
+                <span class="method-sub-num">02</span> Nuestro método
+              </h3>
+              <div class="exp-grid" role="list">
+                <article class="exp-card" role="listitem" tabindex="0">
+                  <span class="exp-card-step" aria-hidden="true">01</span>
+                  <div class="exp-card-icon" aria-hidden="true">
+                    <i class="bi bi-chat-dots"></i>
+                  </div>
+                  <h4 class="exp-card-title">Asesoramiento</h4>
+                  <p class="exp-card-hint">Escuchamos tu necesidad</p>
+                  <div class="exp-card-more">
+                    <p>
+                      Coordinamos una primera charla para entender qué querés
+                      proteger y proponerte la mejor alternativa para tu caso.
+                    </p>
+                    <span class="exp-card-tag">Paso 01</span>
+                  </div>
+                </article>
+                <article class="exp-card" role="listitem" tabindex="0">
+                  <span class="exp-card-step" aria-hidden="true">02</span>
+                  <div class="exp-card-icon" aria-hidden="true">
+                    <i class="bi bi-clipboard-check"></i>
+                  </div>
+                  <h4 class="exp-card-title">Relevamiento</h4>
+                  <p class="exp-card-hint">Analizamos tu espacio</p>
+                  <div class="exp-card-more">
+                    <p>
+                      Visitamos el sitio, detectamos puntos críticos, accesos y
+                      zonas ciegas para definir la cobertura ideal del sistema.
+                    </p>
+                    <span class="exp-card-tag">Paso 02</span>
+                  </div>
+                </article>
+                <article class="exp-card" role="listitem" tabindex="0">
+                  <span class="exp-card-step" aria-hidden="true">03</span>
+                  <div class="exp-card-icon" aria-hidden="true">
+                    <i class="bi bi-wrench-adjustable"></i>
+                  </div>
+                  <h4 class="exp-card-title">Instalación</h4>
+                  <p class="exp-card-hint">Montaje y puesta en marcha</p>
+                  <div class="exp-card-more">
+                    <p>
+                      Instalamos, configuramos y probamos todo el sistema.
+                      Además, te capacitamos para usarlo con confianza desde el
+                      primer día.
+                    </p>
+                    <span class="exp-card-tag">Paso 03</span>
+                  </div>
+                </article>
+                <article class="exp-card" role="listitem" tabindex="0">
+                  <span class="exp-card-step" aria-hidden="true">04</span>
+                  <div class="exp-card-icon" aria-hidden="true">
+                    <i class="bi bi-life-preserver"></i>
+                  </div>
+                  <h4 class="exp-card-title">Soporte</h4>
+                  <p class="exp-card-hint">Acompañamiento continuo</p>
+                  <div class="exp-card-more">
+                    <p>
+                      Soporte postventa, mantenimiento y asistencia técnica
+                      permanente para que nunca quedes desprotegido.
+                    </p>
+                    <span class="exp-card-tag">Paso 04</span>
+                  </div>
+                </article>
+              </div>
+            </div>
           </div>
-          <div class="row g-4 process-row">
-            <div class="col-md-6 col-lg-3">
-              <div class="process-step">
-                <div class="process-circle" aria-hidden="true">
-                  <i class="bi bi-chat-dots"></i>
-                </div>
-                <h3 class="h5 fw-bold">01 Asesoramiento</h3>
-                <p class="lead-muted">
-                  Escuchamos tu necesidad y proponemos la mejor alternativa.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="process-step">
-                <div class="process-circle" aria-hidden="true">
-                  <i class="bi bi-clipboard-check"></i>
-                </div>
-                <h3 class="h5 fw-bold">02 Relevamiento</h3>
-                <p class="lead-muted">
-                  Analizamos el sitio para definir puntos críticos y cobertura.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="process-step">
-                <div class="process-circle" aria-hidden="true">
-                  <i class="bi bi-wrench-adjustable"></i>
-                </div>
-                <h3 class="h5 fw-bold">03 Instalación</h3>
-                <p class="lead-muted">
-                  Montaje profesional, pruebas y puesta en marcha del sistema.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="process-step">
-                <div class="process-circle" aria-hidden="true">
-                  <i class="bi bi-life-preserver"></i>
-                </div>
-                <h3 class="h5 fw-bold">04 Soporte</h3>
-                <p class="lead-muted">
-                  Acompañamiento postventa y soporte técnico continuo.
-                </p>
-              </div>
-            </div>
+
+          <div class="text-center mt-5 reveal">
+            <a class="btn btn-sis" href="asesoramiento.html"
+              >Coordinar una visita técnica</a
+            >
           </div>
         </div>
       </section>
 
       <section class="section-pad">
         <div class="container">
-          <div class="cta-banner">
+          <div class="cta-banner reveal">
             <div class="row g-0 align-items-stretch">
               <div class="col-lg-7 p-4 p-lg-5">
+                <span class="eyebrow eyebrow-light">Sin cargo</span>
                 <h2 class="h1 fw-bold text-white mb-3">
                   Tranquilidad que se siente
                 </h2>
-                <p class="mb-4" style="color: #94a3b8">
+                <p class="mb-4 cta-muted">
                   Protegé tu hogar, negocio o flota con un sistema pensado para
                   vos. Coordiná una visita técnica sin cargo.
                 </p>
@@ -411,14 +482,14 @@
 
       <section class="section-pad bg-soft" aria-labelledby="faq-title">
         <div class="container">
-          <div class="text-center mb-5">
+          <div class="text-center mb-5 reveal">
             <span class="eyebrow">FAQ</span>
             <h2 id="faq-title" class="display-heading h1">
               Preguntas frecuentes
             </h2>
           </div>
           <div class="row g-3">
-            <div class="col-lg-6">
+            <div class="col-lg-6 reveal">
               <div class="faq-item">
                 <button type="button" aria-expanded="false">
                   ¿Qué tipo de cámaras necesito?
@@ -450,7 +521,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 reveal d1">
               <div class="faq-item">
                 <button type="button" aria-expanded="false">
                   ¿Cuánto tarda una instalación?
@@ -500,7 +571,7 @@
                 <h2 id="cta-final-title" class="h4 fw-bold text-white mb-1">
                   Protegé lo que más importa
                 </h2>
-                <p class="mb-0" style="color: #94a3b8">
+                <p class="mb-0 cta-muted">
                   Estamos listos para asesorarte las 24 horas del día.
                 </p>
               </div>
@@ -511,7 +582,7 @@
               >
               <a
                 class="btn btn-sis-ghost"
-                href="https://wa.me/543875334987"
+                href="https://wa.me/543874697984?text=Hola%20SIS%20Seguridad%20Electr%C3%B3nica%2C%20quiero%20solicitar%20asesoramiento%20para%20cotizar%20un%20sistema%20de%20seguridad."
                 target="_blank"
                 rel="noopener noreferrer"
                 >Escribinos por WhatsApp</a
@@ -582,7 +653,7 @@
             <ul>
               <li>
                 <i class="bi bi-telephone text-sis me-2" aria-hidden="true"></i
-                >+54 387 533-4987
+                >+54 387 469-7984
               </li>
               <li>
                 <i class="bi bi-envelope text-sis me-2" aria-hidden="true"></i
@@ -604,7 +675,7 @@
 
     <a
       class="whatsapp-fab"
-      href="https://wa.me/543875334987"
+      href="https://wa.me/543874697984?text=Hola%20SIS%20Seguridad%20Electr%C3%B3nica%2C%20quiero%20solicitar%20asesoramiento%20para%20cotizar%20un%20sistema%20de%20seguridad."
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Escribir por WhatsApp"
